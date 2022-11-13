@@ -1,0 +1,33 @@
+@use "../mixins/responsive.scss" as *;
+@use "../config/variables.scss" as *;
+
+.article{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    @include responsive(laptop){
+        position: relative;
+    }
+    
+    &__img{
+       margin-bottom: 4rem;
+       @include responsive(laptop){
+        margin-bottom: 0;
+       }
+    }
+
+    &__info{
+        @include responsive(laptop){
+            position: absolute;
+            top: 230px;
+            left: 550px;
+            padding-top: 1rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            background-color: var(--white);
+            width: 55%;
+        }
+    }
+
+
+}

@@ -1,1 +1,14 @@
-/* ESTILOS DEL MAIN */
+@use "../mixins/responsive.scss" as *;
+@use "../config/variables.scss" as *;
+
+.main{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+
+    @include responsive(laptop){
+        padding-left: 8rem;
+        padding-right: 8rem;
+        text-align: left;
+    }
+}

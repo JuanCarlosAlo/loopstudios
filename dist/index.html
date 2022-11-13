@@ -10,22 +10,162 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
     <!-- CAMBIAR POR styles.min.css al finalizar el proyecto -->
     <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
   </head>
 
   <body>
-    <header class="header">
+    <header id="header" class="header">
+      <div  class="header__top">
+      <img class="header__logo" src="/dist/assets/images/logo.svg" alt="">
       <nav>
-        <ul class="menu">
+        <ul  id="menu" class="menu">
           <li class="menu__item">
-            <a href="#" class="menu__link">Item de ejemplo</a>
+            <a class="link" href="#" class="menu__link">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="link" href="#" class="menu__link">Careers</a>
+          </li>
+          <li class="menu__item">
+            <a class="link" href="#" class="menu__link">Events</a>
+          </li>
+          <li class="menu__item">
+            <a class="link" href="#" class="menu__link">Products</a>
+          </li>
+          <li class="menu__item">
+            <a class="link" href="#" class="menu__link">Support</a>
           </li>
         </ul>
+        
       </nav>
+      <img data-image="hamburger" id="icon-menu" class="header__hamburger" src="/dist/assets/images/icon-hamburger.svg" alt="">
+    </div>
+    <h1 class="header__title title">
+      IMMERSIVE EXPERIENCES THAT DELIVER
+    </h1>
     </header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <main class="main">
+      <article class="article">
+        <img class="article__img" src="/dist/assets/images/mobile/image-interactive.jpg" alt="">
+        <div class="article__info">
+          <h2 class="article__title title">
+            THE LEADER IN INTERACTIVE VR
+          </h2>
+          <p class="article__text">
+            Founded in 2011, Loopstudios has been producing world-class virtual reality 
+            projects for some of the best companies around the globe. Our award-winning 
+            creations have transformed businesses through digital experiences that bind 
+            to their brand.
+          </p>
+        </div>
+      </article>
+
+      <article class="gallery">
+        
+          <h2 class="gallery__title title">
+            OUR CREATIONS
+          </h2>
+        
+        <div class="gallery__content">
+          <div class="gallery__item gallery__item--deep-earth">
+            <h3 class="gallery__name">
+              DEEP <br> EARTH
+            </h3>
+          </div>
+          <div class="gallery__item gallery__item--night-arcade">
+            <h3 class="gallery__name">
+              NIGHT <br> ARCADE
+            </h3>
+          </div>
+          <div class="gallery__item gallery__item--soocer-team">
+            <h3 class="gallery__name">
+              SOCCER <br> TEAM VR
+            </h3>
+          </div>
+          <div class="gallery__item gallery__item--the-grid">
+            <h3 class="gallery__name">
+              THE <br> GRID
+            </h3>
+          </div>
+          <div class="gallery__item gallery__item--from-up">
+            <h3 class="gallery__name">
+              FROM UP <br> ABOVE VR
+            </h3>
+          </div>
+          <div class="gallery__item gallery__item--pocket-borealis">
+            <h3 class="gallery__name">
+              POCKET <br> BOREALIS
+            </h3>
+          </div>
+          <div class="gallery__item gallery__item--the-curiosity">
+            <h3 class="gallery__name">
+              THE <br> CURIOSITY
+            </h3>
+          </div>
+          <div class="gallery__item gallery__item--make-it">
+            <h3 class="gallery__name">
+              MAKE IT <br> FISHEYE
+            </h3>
+          </div>
+
+        </div>
+        <a class="gallery__button" href="">SEE ALL</a>
+
+
+      </article>
+
+
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__internal">
+          <img class="footer__logo" src="/dist/assets/images/logo.svg" alt="">
+          <ul class="internal__menu">
+            <li class="internal__menu-item">
+              <a class="link" href="">About</a>
+            </li>
+            <li class="internal__menu-item">
+              <a class="link" href="">Careers</a>
+            </li>
+            <li class="internal__menu-item">
+              <a class="link" href="">Events</a>
+            </li>
+            <li class="internal__menu-item">
+              <a class="link" href="">Products</a>
+            </li>
+            <li class="internal__menu-item">
+              <a class="link" href="">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__external">
+          <div class="socials">
+            <a class="link" href="">
+              <i class="fa-brands fa-square-facebook icon"></i>
+            </a>
+            <a class="link" href="">
+              <i class="fa-brands fa-twitter icon"></i>
+            </a>
+            <a class="link" href="">
+              <i class="fa-brands fa-pinterest icon"></i>
+            </a>
+            <a class="link" href="">
+              <i class="fa-brands fa-instagram icon"></i>
+            </a>
+          </div>
+          <p class="footer__copyright">© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+      </div>
+
+    </footer>
   </body>
+  <script src="/dist/js/scripts.js"></script>
+  <script src="https://kit.fontawesome.com/7cce48077f.js" crossorigin="anonymous"></script>
 </html>

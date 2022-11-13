@@ -1,1 +1,8 @@
+.article{
 
+    &__text{
+        line-height: 30px;
+        font-weight: 300;
+        color: var(--dark-gray);
+    }
+}
