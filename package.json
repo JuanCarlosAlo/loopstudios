@@ -1,0 +1,19 @@
+{
+  "name": "plantilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "rm -rf ./dist/css & sass --watch --no-source-map ./src/scss/styles.scss ./dist/css/styles.css",
+    "build": "postcss ./dist/css/styles.css -o ./dist/css/styles.min.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.56.1"
+  }
+}
