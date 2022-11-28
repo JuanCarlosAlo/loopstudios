@@ -9,11 +9,11 @@
 
 ## Descripción 📑
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+Loopstudios es una empresa que ofrece un amplio abanico de productos y servicios con una experiencia inmersiva gracias a la realidad virual.
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+En este proyecto tuve la exeriencia de hacer una galeria responsive con hover, aunque el planteamiento del posicionamiento hay que arreglarlo ya que se planteo de forma erronea en el comienzo.
 
 ## Tecnologías 🛠
 
@@ -35,9 +35,9 @@ Si quieres echar un vistazo al proyecto, te recomiendo:
 
 **TU NOMBRE**
 
-- [micorreo@midominio.com](micorreo@midominio.com)
+- [juancarlosam@gmail.com](micorreo@midominio.com)
 - [LinkedIn](https://www.linkedin.com/in/tu-url-de-linkedin/)
-- [Porfolio web](https://tu-dominio.com/)
+- [https://github.com/JuanCarlosAlo](https://tu-dominio.com/)
 
 ## Instalación
 
