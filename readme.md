@@ -7,15 +7,15 @@
 - [https://github.com/JuanCarlosAlo/loopstudios](URL-de-github-pages-de-este-proyecto)
 - [https://juancarlosalo.github.io/loopstudios/](URL-de-la-api)
 
-## Descripción 📑
+## Descripción 
 
 Loopstudios es una empresa que ofrece un amplio abanico de productos y servicios con una experiencia inmersiva gracias a la realidad virual.
 
-## ¿Qué he aprendido en este proyecto? 🙇🏻
+## ¿Qué he aprendido en este proyecto? 
 
 En este proyecto tuve la exeriencia de hacer una galeria responsive con hover, aunque el planteamiento del posicionamiento hay que arreglarlo ya que se planteo de forma erronea en el comienzo.
 
-## Tecnologías 🛠
+## Tecnologías 
 
 <!-- Iconos sacados de: https://github.com/hendrasob/badges/blob/master/README.md y https://github.com/alexandresanlim/Badges4-README.md-Profile -->
 
@@ -27,23 +27,22 @@ En este proyecto tuve la exeriencia de hacer una galeria responsive con hover, a
 
 Si quieres echar un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
+![Captura del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/loopstudios/main/docs/assets/images/read-me-img-1.jpg)
+![Captura del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/loopstudios/main/docs/assets/images/read-me-img-2.jpg)
+![Captura del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/loopstudios/main/docs/assets/images/read-me-img-3.jpg)
 
-## Autor ✒️
+## Autor 
 
-**TU NOMBRE**
 
-- [juancarlosam@gmail.com](micorreo@midominio.com)
-- [LinkedIn](https://www.linkedin.com/in/tu-url-de-linkedin/)
-- [https://github.com/JuanCarlosAlo](https://tu-dominio.com/)
+- [Email](juancarlosam@gmail.com)
+- [Linkedin](https://www.linkedin.com/in/juan-carlos-alonso-966280166/)
+- [GitHub]([https://github.com/JuanCarlosAlo)
 
 ## Instalación
 
 Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
 
-## Licencia 📄
+## Licencia 
 
 MIT Public License v3.0
 No puede usarse comencialmente.
