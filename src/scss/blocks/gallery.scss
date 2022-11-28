@@ -2,322 +2,234 @@
 @use "../mixins/hover.scss" as *;
 @use "../config/variables.scss" as *;
 
-.gallery{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 4rem;
-    @include responsive(laptop){
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 75rem;
-    }
+.gallery {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  @include responsive(laptop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 75rem;
+  }
 
-
-    &__button{
-        display: block;
-        width: 150px;
-        padding: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-        letter-spacing: 5px;
-        color: var(--black);
-        text-align: center;
-        border: solid var(--black);
-        &:hover {
-            @include hover {
-                background-color: var(--black);
-                color: var(--white);
-            }
-            }
-
-        @include responsive(laptop){
-            margin-right: 4rem;
-        }
-    }
-
-    &__content{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 40px;
-        margin-bottom: 2rem;
+  &__button {
+    display: block;
+    width: 150px;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 5px;
+    color: var(--black);
+    text-align: center;
+    border: solid var(--black);
+    &:hover {
+      @include hover {
+        background-color: var(--black);
         color: var(--white);
-        grid-template-rows: auto ;
-       
-        
-
-
-        @include responsive(laptop){
-            position: absolute;
-            top: 150px;
-            grid-template-columns: 256px 256px 256px 256px ;
-            grid-template-rows: 450px 450px;
-            
-        }
+      }
     }
 
-    &__name{
-        padding: 1rem;
-        @include responsive(laptop){
-            padding-top: 22rem;
-        }
+    @include responsive(laptop) {
+      margin-right: 4rem;
+    }
+  }
 
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 2rem;
+    color: var(--white);
+    grid-template-rows: auto;
+
+    @include responsive(laptop) {
+      position: absolute;
+      top: 150px;
+      grid-template-columns: 256px 256px 256px 256px;
+      grid-template-rows: 450px 450px;
+    }
+  }
+
+  &__name {
+    padding: 1rem;
+    @include responsive(laptop) {
+      padding-top: 22rem;
+    }
+  }
+
+  &__item {
+    &--deep-earth {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent),
+        url(../assets/images/mobile/image-deep-earth.jpg);
+
+      background-size: cover;
+      @include responsive(laptop) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent),
+          url(../assets/images/desktop/image-deep-earth.jpg);
+
+        &:hover {
+          @include hover {
+            color: var(--black);
+            background: linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.6) 100%,
+                transparent
+              ),
+              url(../assets/images/desktop/image-deep-earth.jpg);
+          }
+        }
+      }
     }
 
-    &__item{
-        
-        &--deep-earth{
-            background: 
-            linear-gradient(
-                90deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-            url(/dist/assets/images/mobile/image-deep-earth.jpg)
-            ;
-            
-            background-size: cover;
-            @include responsive(laptop){
-                
-                background-image: 
-                linear-gradient(
+    &--night-arcade {
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent),
+        url(../assets/images/mobile/image-night-arcade.jpg);
+      background-size: cover;
+      @include responsive(laptop) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent),
+          url(../assets/images/desktop/image-night-arcade.jpg);
+
+        &:hover {
+          @include hover {
+            color: var(--black);
+            background: linear-gradient(
                 0deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-                url(/dist/assets/images/desktop/image-deep-earth.jpg);
-
-                &:hover {
-                    @include hover {
-                        color: var(--black);
-                        background:
-                        linear-gradient(
-                        0deg,
-                        rgba(255, 255, 255, 0.6)100%,
-                        transparent),
-                        url(/dist/assets/images/desktop/image-deep-earth.jpg);
-                    }
-                    }
-               }
+                rgba(255, 255, 255, 0.6) 100%,
+                transparent
+              ),
+              url(../assets/images/desktop/image-night-arcade.jpg);
+          }
         }
-
-        &--night-arcade{
-            background-image: 
-            linear-gradient(
-                90deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-            url(/dist/assets/images/mobile/image-night-arcade.jpg);
-            background-size: cover;
-            @include responsive(laptop){
-                
-                background-image:
-                linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-                url(/dist/assets/images/desktop/image-night-arcade.jpg);
-
-                &:hover {
-                    @include hover {
-                        color: var(--black);
-                        background:
-                        linear-gradient(
-                        0deg,
-                        rgba(255, 255, 255, 0.6)100%,
-                        transparent),
-                        url(/dist/assets/images/desktop/image-night-arcade.jpg);
-                    }
-                    }
-               }
-        }
-
-        &--soocer-team{
-            background: 
-            linear-gradient(
-                90deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-            url(/dist/assets/images/mobile/image-soccer-team.jpg)
-            ;
-            background-size: cover;
-            @include responsive(laptop){
-                
-                background-image: 
-                linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-                url(/dist/assets/images/desktop/image-soccer-team.jpg);
-
-                &:hover {
-                    @include hover {
-                        color: var(--black);
-                        background:
-                        linear-gradient(
-                        0deg,
-                        rgba(255, 255, 255, 0.6)100%,
-                        transparent),
-                        url(/dist/assets/images/desktop/image-soccer-team.jpg);
-                    }
-                    }
-               }
-        }
-       
-        &--the-grid{
-            background: 
-            linear-gradient(
-                90deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-            url(/dist/assets/images/mobile/image-grid.jpg)
-            ;
-            background-size: cover;
-            @include responsive(laptop){
-                
-                background-image: 
-                linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-                url(/dist/assets/images/desktop/image-grid.jpg);
-                &:hover {
-                    @include hover {
-                        color: var(--black);
-                        background:
-                        linear-gradient(
-                        0deg,
-                        rgba(255, 255, 255, 0.6)100%,
-                        transparent),
-                        url(/dist/assets/images/desktop/image-grid.jpg);
-                    }
-                    }
-               }
-        }
-        
-        &--from-up{
-            background: 
-            linear-gradient(
-                90deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-            url(/dist/assets/images/mobile/image-from-above.jpg)
-            ;
-            background-size: cover;
-            @include responsive(laptop){
-                
-                background-image: 
-                linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-                url(/dist/assets/images/desktop/image-from-above.jpg);
-                &:hover {
-                    @include hover {
-                        color: var(--black);
-                        background:
-                        linear-gradient(
-                        0deg,
-                        rgba(255, 255, 255, 0.6)100%,
-                        transparent),
-                        url(/dist/assets/images/desktop/image-from-above.jpg);
-                    }
-                    }
-               }
-        }
-
-        &--pocket-borealis{
-            background: 
-            linear-gradient(
-                90deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-            url(/dist/assets/images/mobile/image-pocket-borealis.jpg)
-            ;
-            background-size: cover;
-            @include responsive(laptop){
-                
-                background-image: 
-                linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-                url(/dist/assets/images/desktop/image-pocket-borealis.jpg);
-                &:hover {
-                    @include hover {
-                        color: var(--black);
-                        background:
-                        linear-gradient(
-                        0deg,
-                        rgba(255, 255, 255, 0.6)100%,
-                        transparent),
-                        url(/dist/assets/images/desktop/image-pocket-borealis.jpg);
-                    }
-                    }
-               }
-        }
-
-        &--the-curiosity{
-            background: 
-            linear-gradient(
-                90deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-            url(/dist/assets/images/mobile/image-curiosity.jpg)
-            ;
-            background-size: cover;
-            @include responsive(laptop){
-                
-                background-image: 
-                linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-                url(/dist/assets/images/desktop/image-curiosity.jpg);
-                &:hover {
-                    @include hover {
-                        color: var(--black);
-                        background:
-                        linear-gradient(
-                        0deg,
-                        rgba(255, 255, 255, 0.6)100%,
-                        transparent),
-                        url(/dist/assets/images/desktop/image-curiosity.jpg);
-                    }
-                    }
-               }
-        }
-
-        &--make-it{
-            background: 
-            linear-gradient(
-                90deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-            url(/dist/assets/images/mobile/image-fisheye.jpg)
-            ;
-            background-size: cover;
-            @include responsive(laptop){
-                
-                background-image: 
-                linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.8),
-                transparent),
-                url(/dist/assets/images/desktop/image-fisheye.jpg);
-                &:hover {
-                    @include hover {
-                        color: var(--black);
-                        background:
-                        linear-gradient(
-                        0deg,
-                        rgba(255, 255, 255, 0.6)100%,
-                        transparent),
-                        url(/dist/assets/images/desktop/image-fisheye.jpg);
-                    }
-                    }
-               }
-        }
-
-        
+      }
     }
+
+    &--soocer-team {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent),
+        url(../assets/images/mobile/image-soccer-team.jpg);
+      background-size: cover;
+      @include responsive(laptop) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent),
+          url(../assets/images/desktop/image-soccer-team.jpg);
+
+        &:hover {
+          @include hover {
+            color: var(--black);
+            background: linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.6) 100%,
+                transparent
+              ),
+              url(../assets/images/desktop/image-soccer-team.jpg);
+          }
+        }
+      }
+    }
+
+    &--the-grid {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent),
+        url(../assets/images/mobile/image-grid.jpg);
+      background-size: cover;
+      @include responsive(laptop) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent),
+          url(../assets/images/desktop/image-grid.jpg);
+        &:hover {
+          @include hover {
+            color: var(--black);
+            background: linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.6) 100%,
+                transparent
+              ),
+              url(../assets/images/desktop/image-grid.jpg);
+          }
+        }
+      }
+    }
+
+    &--from-up {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent),
+        url(../assets/images/mobile/image-from-above.jpg);
+      background-size: cover;
+      @include responsive(laptop) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent),
+          url(../assets/images/desktop/image-from-above.jpg);
+        &:hover {
+          @include hover {
+            color: var(--black);
+            background: linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.6) 100%,
+                transparent
+              ),
+              url(../assets/images/desktop/image-from-above.jpg);
+          }
+        }
+      }
+    }
+
+    &--pocket-borealis {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent),
+        url(../assets/images/mobile/image-pocket-borealis.jpg);
+      background-size: cover;
+      @include responsive(laptop) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent),
+          url(../assets/images/desktop/image-pocket-borealis.jpg);
+        &:hover {
+          @include hover {
+            color: var(--black);
+            background: linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.6) 100%,
+                transparent
+              ),
+              url(../assets/images/desktop/image-pocket-borealis.jpg);
+          }
+        }
+      }
+    }
+
+    &--the-curiosity {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent),
+        url(../assets/images/mobile/image-curiosity.jpg);
+      background-size: cover;
+      @include responsive(laptop) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent),
+          url(../assets/images/desktop/image-curiosity.jpg);
+        &:hover {
+          @include hover {
+            color: var(--black);
+            background: linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.6) 100%,
+                transparent
+              ),
+              url(../assets/images/desktop/image-curiosity.jpg);
+          }
+        }
+      }
+    }
+
+    &--make-it {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent),
+        url(../assets/images/mobile/image-fisheye.jpg);
+      background-size: cover;
+      @include responsive(laptop) {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent),
+          url(../assets/images/desktop/image-fisheye.jpg);
+        &:hover {
+          @include hover {
+            color: var(--black);
+            background: linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.6) 100%,
+                transparent
+              ),
+              url(../assets/images/desktop/image-fisheye.jpg);
+          }
+        }
+      }
+    }
+  }
 }

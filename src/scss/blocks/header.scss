@@ -3,72 +3,70 @@
 @use "../mixins/hover.scss" as *;
 @use "../config/variables.scss" as *;
 
+.header {
+  position: relative;
+  background-image: url(../assets/images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: var(--white);
+  height: 700px;
 
-.header{
-    position: relative;
-    background-image: url(/dist/assets/images/mobile/image-hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    color: var(--white);
-    height: 700px;
-
-    &__menu--show{
-        background-color: var(--black);
-    }
-
-    @include responsive(laptop){
-        padding-left: 8rem;
-        padding-right: 8rem;
-        height: 700px;
-        background-image: url(/dist/assets/images/desktop/image-hero.jpg);
-        background-position: center;
-    }
-
-    &__top{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 3rem;
-        margin-bottom: 12rem;
-    }
-
-    &__logo{
-        width: 150px;
-    }
-
-    &__hamburger{
-        @include responsive(laptop){
-            display: none;
-        }
-    }
-
-}
-
-.header--menu{
-    position: relative;
+  &__menu--show {
     background-color: var(--black);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    color: var(--white);
-    height: 700px;
+  }
 
-    @include responsive(laptop){
-        padding-left: 8rem;
-        padding-right: 8rem;
-        height: 700px;
-        background-image: url(/dist/assets/images/desktop/image-hero.jpg);
-        background-position: center;
+  @include responsive(laptop) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    height: 700px;
+    background-image: url(../assets/images/desktop/image-hero.jpg);
+    background-position: center;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    margin-bottom: 12rem;
+  }
+
+  &__logo {
+    width: 150px;
+  }
+
+  &__hamburger {
+    @include responsive(laptop) {
+      display: none;
     }
+  }
 }
 
-.menu{
-    display: none;
+.header--menu {
+  position: relative;
+  background-color: var(--black);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: var(--white);
+  height: 700px;
 
-    @include responsive(laptop){
+  @include responsive(laptop) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    height: 700px;
+    background-image: url(../assets/images/desktop/image-hero.jpg);
+    background-position: center;
+  }
+}
+
+.menu {
+  display: none;
+
+  @include responsive(laptop) {
     display: flex;
     position: static;
     flex-direction: row;
@@ -78,80 +76,78 @@
     background-color: transparent;
     width: 450px;
     justify-content: space-evenly;
-    font-family: 'Alata', sans-serif;
+    font-family: "Alata", sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    
-    &__link{
-        display: block;
-        padding-bottom: 1.5rem;
-        @include responsive(laptop){
-            padding-bottom: 0;
-        }
+
+    &__link {
+      display: block;
+      padding-bottom: 1.5rem;
+      @include responsive(laptop) {
+        padding-bottom: 0;
+      }
     }
-    
-}
+  }
 }
 
-.menu--show{
-    display: block;
-    position: absolute;
+.menu--show {
+  display: block;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  top: 100px;
+  width: 100vw;
+  left: 0;
+  height: 600px;
+  color: var(--white);
+  background-color: var(--black);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+
+  @include responsive(laptop) {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    height: auto;
+    background-color: transparent;
+    width: 450px;
+    justify-content: space-evenly;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+
+    &__link {
+      display: block;
+      padding-bottom: 1.5rem;
+      @include responsive(laptop) {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.link {
+  @include responsive(laptop) {
+    display: flex;
     justify-content: center;
-    gap: 1rem;
-    top: 100px;
-    width: 100vw;
-    left:0;
-    height: 600px;
-    color: var(--white);
-    background-color: var(--black);
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    font-size: 2rem;
-    padding: 2rem;
-
-    @include responsive(laptop){
-        display: flex;
-        position: static;
-        flex-direction: row;
-        align-items: center;
-        padding: 0;
-        height: auto;
-        background-color: transparent;
-        width: 450px;
-        justify-content: space-evenly;
-        font-family: 'Alata', sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        
-        &__link{
-            display: block;
-            padding-bottom: 1.5rem;
-            @include responsive(laptop){
-                padding-bottom: 0;
-            }
+    align-items: flex-end;
+    position: relative;
+    &:hover {
+      @include hover {
+        &::before {
+          @include pseudo(20px, 2px) {
+            background-color: var(--white);
+            top: 30px;
+          }
         }
-    }    
-}
-
-.link{
-    @include responsive(laptop){
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        position: relative;
-        &:hover {
-        @include hover {
-            &::before{
-            @include pseudo(20px, 2px){
-                background-color: var(--white);
-                top: 30px;
-               
-            }
-        }
+      }
     }
-    }
-}
+  }
 }
