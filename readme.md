@@ -27,8 +27,16 @@ En este proyecto tuve la exeriencia de hacer una galeria responsive con hover, a
 
 Si quieres echar un vistazo al proyecto, te recomiendo:
 
+## Ordenador
+
 ![Captura del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/loopstudios/main/docs/assets/images/read-me-img-1.jpg)
+
+## Estados activos
+
 ![Captura del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/loopstudios/main/docs/assets/images/read-me-img-2.jpg)
+
+## Movil
+
 ![Captura del proyecto](https://raw.githubusercontent.com/JuanCarlosAlo/loopstudios/main/docs/assets/images/read-me-img-3.jpg)
 
 ## Autor 
