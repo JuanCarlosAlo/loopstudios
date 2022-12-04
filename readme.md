@@ -4,8 +4,7 @@
 
 ## Ejemplo en vivo
 
-- [https://github.com/JuanCarlosAlo/loopstudios](URL-de-github-pages-de-este-proyecto)
-- [https://juancarlosalo.github.io/loopstudios/](URL-de-la-api)
+- [Live Demo](https://github.com/JuanCarlosAlo/loopstudios)
 
 ## Descripción 
 
@@ -42,7 +41,7 @@ Si quieres echar un vistazo al proyecto, te recomiendo:
 ## Autor 
 
 
-- [Email](juancarlosam@gmail.com)
+- Email: juancarlosam@gmail.com
 - [Linkedin](https://www.linkedin.com/in/juan-carlos-alonso-966280166/)
 - [GitHub]([https://github.com/JuanCarlosAlo)
 
